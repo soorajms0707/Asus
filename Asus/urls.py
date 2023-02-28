@@ -1,0 +1,61 @@
+from django.urls import path
+from .views import *
+
+urlpatterns = [
+
+    path('', index),
+    path('contact/', contact),
+    path('usercontact/<username>', usercontact),
+    path('contactus/', contactus),
+    path('about/', about),
+    path('userabout/<username>', userabout),
+    path('adminreg/',adminreg),
+    path('adminlog/',adminlog),
+    path('adminindex/<username>', adminindex),
+    path('profileedit/<username>', profileedit),
+    path('productupload/<username>',productupload),
+    path('productdisplay/', pdisplay),
+    path('uploaddelete/<int:id>', pdelete),
+    path('uploadedit/<int:id>', pedit),
+    path('zenupload/<username>',zupload),
+    path('zendisplay/', zdisplay),
+    path('zendelete/<int:id>', zdelete),
+    path('zenedit/<int:id>', zedit),
+    path('vivoupload/<username>',vupload),
+    path('vivodisplay/', vdisplay),
+    path('vivodelete/<int:id>', vdelete),
+    path('vivoedit/<int:id>', vedit),
+    path('rogupload/<username>',rupload),
+    path('rogdisplay/', rdisplay),
+    path('rogdelete/<int:id>', rdelete),
+    path('rogedit/<int:id>', redit),
+    path('tufupload/<username>',tupload),
+    path('tufdisplay/', tdisplay),
+    path('tufdelete/<int:id>', tdelete),
+    path('tufedit/<int:id>', tedit),
+
+
+
+    path('userreg/', userreg),
+    path('verify/<auth_token>', verify),
+    path('userlogin/', userlogin),
+    path('userindex/<username>',userindex),
+    path('zen/<username>',zen),
+    path('vivo/<username>', vivo),
+    path('rog/<username>', rog),
+    path('tuf/<username>', tuf),
+    path('userprofile/<username>',userprofile),
+    path('myproduct/<username>', myproduct),
+    path('myproductdelete/<username>/<int:id>', mydelete),
+    path('useredit/<username>', useredit),
+    path('pcart/<int:id>', pcart),
+    path('zcart/<int:id>', zcart),
+    path('vcart/<int:id>', vcart),
+    path('rcart/<int:id>', rcart),
+    path('tcart/<int:id>', tcart),
+    path('cartdisplay/<username>', cartdisplay),
+    path('cartdelete/<username>/<int:id>', cartdelete),
+    path('buy/<username>/<int:id>',buy),
+
+
+]
